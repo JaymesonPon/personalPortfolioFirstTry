@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Jaymeson Pon Portfolio
+  </title>
+  <!-- <link rel="stylesheet" type="text/css" href="Style.css"> -->
+  <style>
+    * {
+      padding:0;
+      margin:0;
+    }
+
+    body {
+      font-size:100%;
+    }
+
+    #navbar {
+      display:flex;
+      width:100%;
+      position:fixed;
+      right:3px;
+      background-color:#bbbbbb;
+      justify-content: flex-end;
+      padding-bottom:2%;
+      padding-top:2%;
+      margin-right:-3px;
+      z-index: 1;
+    }
+
+    .navdiv {
+      /* text-align: center; */
+      width:auto;
+      padding-left:auto;
+      padding-right:auto;
+      margin-right:20px;
+    }
+
+    .navdiv:hover {
+      border-bottom: solid;
+      border-color:black;
+      border-width: 1px;
+    }
+
+    .navlink {
+      text-decoration:none;
+      color:black;
+      font-weight: bold;
+      text-align: center;
+
+    }
+    a:visited {
+      text-decoration: none;
+
+    }
+
+
+    #welcome-section {
+      height:100vh;
+      text-align: center;
+      background-color: #bbbbbb;
+      width:100vw;
+      padding:0;
+      margin:0;
+    }
+    #welcome-text {
+      position:relative;
+      top:40%;
+      padding-left:2%;
+      padding-right:2%;
+      /* font-size:40%; */
+    }
+    #welcome-text h1 {
+      font-size:10vh;
+
+    }
+
+    #bio {
+      height:100vh;
+      min-height:600px;
+
+    }
+    #bio-div {
+
+      /* background-color: blue; */
+      height: 100%;
+      margin-top:0px;
+      padding-top:0px;
+      /* font-size:6vw; */
+    }
+    #bio-heading {
+      text-align: center;
+      position:relative;
+      top:15%;
+      font-size:6vh;
+      /* background-color: blue; */
+    }
+
+    #bio-img-div {
+      width:19%;
+      /* max-height:20%; */
+      text-align: center;
+      /* height:180px; */
+      margin-left:auto;
+      margin-right:auto;
+      position:relative;
+      top:20%;
+      padding:0;
+      /* background-color:blue; */
+
+      /* background-image: url("Pictures/ProfilePic.jpg");
+      box-shadow: 0 0 8px 8px white inset;
+      background-size:contain;
+      background-repeat:no-repeat; */
+    }
+    @media only screen and (max-width: 400px) {
+      #bio-img-div{
+        display:none;
+      }
+      #bio-img {
+        display:none;
+      }
+    }
+    #bio-img {
+      position:relative;
+      width:100%;
+      max-width:150px;
+
+    }
+    .bio-info {
+        font-size:100%;
+        margin-bottom:3%;
+        padding-left:2%;
+        padding-right:2%;
+        position: relative;
+        top:28%
+    }
+
+    #projects {
+      display:flex;
+      min-height:100vh;
+      /* flex-direction:row; */
+      flex-wrap: wrap;
+    background-color: #e0ebe8;
+      justify-content:space-evenly;
+    }
+    #projects-heading-div {
+      width:100%;
+      height:30vh;
+      /* position:relative; */
+    }
+    #projects-heading {
+      text-align: center;
+      position:relative;
+      top:40%;
+      width:100%;
+      font-size:6vh;
+    }
+
+    .project-tile {
+      min-width:50px;
+      width:30%;
+      transition-property: width;
+      transition-duration: .5s;
+    }
+    .project-tile:hover {
+      width:35%;
+    }
+
+    img {
+      width:100%;
+    }
+    footer {
+      text-align: center;
+      background-color: #e0ebe8;
+
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <div id="navbar">
+    <div id="nav-welcome" class="navdiv">
+      <a href=#welcome-section class="navlink">Welcome</a>
+    </div>
+    <div id="nav-bio" class="navdiv">
+      <a href=#bio class="navlink">Bio</a>
+    </div>
+    <div id="nav-projects" class="navdiv">
+      <a href=#projects class="navlink">Projects</a>
+    </div>
+    <div id="nav-myGitHub" class="navdiv">
+      <a id="profile-link" target="_blank" href="https://github.com/JaymesonPon" class="navlink">My Git Hub</a>
+    </div>
+  </div>
+
+  <section id="welcome-section">
+    <div id="welcome-text">
+      <h1>
+        Jaymeson Pon Portfolio
+      </h1>
+    </div>
+  </section>
+
+  <section id="bio">
+    <div id="bio-div">
+     <h1 id="bio-heading">Biography</h1>
+     <div id="bio-img-div">
+       <img id="bio-img" src="Pictures/ProfilePic.jpg" alt="Picture of Jaymeson">
+    </div>
+       <p class="bio-info">I've worked as an accountant for seven years now. At my job I realized I wanted to learn how to automate things more and more.
+         I started learning more Excel formulas and functions. I already had a good base of knowledge from a couple high school courses.
+         I took part of a Udemy course that walked through HTML, CSS and many other languages and frameworks. A year later I started learning again with FreeCodeCamp.Org, which has been a great process. I hope to become a fullstack
+         developer, but my first step is landing a front-end developer position.
+       </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div id="projects-heading-div">
+      <h1 id="projects-heading">These are some of my projects<h1>
+    </div>
+    <div id="project-tile1-div" class="project-tile">
+      <a id="project-tile1-link" href="https://jaymesonpon.github.io/Product-page/" target="_blank" alt="https://jaymesonpon.github.io/Product-page/https://jaymesonpon.github.io/Product-page/"><img src="Pictures/productPageImg.png"></a>
+    </div>
+    <div id=project-tile2-div class="project-tile">
+      <a id="project-tile2-link" href="#" target="_blank" alt=""><img src="Pictures/tributePageImg.png" alt="Tribute Page Img"></a>
+    </div>
+  </section>
+
+
+  <footer>&copy Jaymeson Pon 2019</footer>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
